@@ -31,6 +31,25 @@ dotnet build NetworkSkins/NetworkSkins.csproj -c Release
 
 The compiled DLL will be in `NetworkSkins/bin/Release/net35/NetworkSkins.dll`
 
+### Quick Build Scripts
+
+For convenience, you can use the provided build scripts:
+
+**Windows (PowerShell):**
+```powershell
+.\build-release.ps1 -Version "1.0.0"
+```
+
+**Linux/macOS (Bash):**
+```bash
+./build-release.sh 1.0.0
+```
+
+These scripts will:
+- Build the project in Release mode
+- Collect all necessary files
+- Create a release ZIP archive
+
 ## Releases
 
 Releases are automatically created when a version tag is pushed:
